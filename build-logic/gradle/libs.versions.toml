@@ -1,0 +1,13 @@
+[versions]
+androidGradlePlugin = "8.4.1"
+kotlin = "2.0.0"
+kotlinpoet = "1.16.0"
+json = "20240303"
+
+[libraries]
+android-gradlePlugin-api = { group = "com.android.tools.build", name = "gradle-api", version.ref = "androidGradlePlugin" }
+kotlinpoet = { module = "com.squareup:kotlinpoet", version.ref = "kotlinpoet" }
+json = { group = "org.json", name = "json", version.ref = "json" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
