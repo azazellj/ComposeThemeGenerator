@@ -70,7 +70,6 @@ open class DSMGeneratorPlugin : Plugin<Project> {
 
         this.group = "dsm"
         this.dsmFile.set(dsmTokensFile)
-        this.namespace.set(android.namespace)
         this.`package`.set("${android.namespace}.ui.theme")
         this.flavorDirectory.set(flavorDirectory.asFile)
     }

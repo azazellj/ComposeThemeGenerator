@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.azazellj.compose.theme.generator.ui.theme.ComposeThemeGeneratorTheme
+import com.azazellj.compose.theme.generator.ui.theme.ThemeColors
 import com.azazellj.compose.theme.generator.ui.theme.ThemeTextStyles
 
 class MainActivity : ComponentActivity() {
@@ -47,6 +48,7 @@ fun Greeting(
     Text(
         text = "Hello $name!",
         modifier = modifier,
+        color = ThemeColors.colorM3SysLightOnSurfaceVariant,
         style = ThemeTextStyles.fontM3BodyLarge,
     )
 }

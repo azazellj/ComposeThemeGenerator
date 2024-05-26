@@ -27,9 +27,6 @@ internal abstract class AbstractGeneratorTask<T : GeneratedType> : DefaultTask()
     abstract val flavorDirectory: DirectoryProperty
 
     @get:Input
-    abstract val namespace: Property<String>
-
-    @get:Input
     abstract val `package`: Property<String>
 
     abstract val componentClassName: ClassName
